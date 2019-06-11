@@ -13,6 +13,12 @@
     },
     "bmw": {
       "tags": []
+    },
+    "shared": {
+      "tags": []
+    },
+    "shared-ui": {
+      "tags": []
     }
   }
 }
