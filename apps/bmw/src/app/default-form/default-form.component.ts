@@ -8,7 +8,7 @@ import { perfume, TIMERS } from '../../perfume';
 @Component({
   selector: 'bmw-default-form',
   templateUrl: './default-form.component.html',
-  styleUrls: ['./default-form.component.scss']
+  providers: [UiService]
 })
 export class DefaultFormComponent implements AfterViewInit {
 
