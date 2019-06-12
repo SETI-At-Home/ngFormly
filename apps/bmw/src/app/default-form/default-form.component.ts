@@ -1,5 +1,5 @@
 import { Component, AfterViewInit } from '@angular/core';
-import { UiService } from '../../../../../libs/shared/ui/src/lib/ui.service';
+import { UiService } from '../../../../../libs/shared/ui/forms/src/lib/ui.service';
 import { FormlyFieldConfig } from '@ngx-formly/core';
 import { FormGroup } from '@angular/forms';
 import { PerfumeAfterViewInit } from 'perfume.js/angular';

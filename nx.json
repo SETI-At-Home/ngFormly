@@ -14,10 +14,7 @@
     "bmw": {
       "tags": []
     },
-    "shared": {
-      "tags": []
-    },
-    "shared-ui": {
+    "forms": {
       "tags": []
     }
   }

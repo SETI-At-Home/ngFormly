@@ -116,18 +116,18 @@
         }
       }
     },
-    "shared": {
+    "forms": {
       "projectType": "library",
-      "root": "libs/shared",
-      "sourceRoot": "libs/shared/src",
+      "root": "libs/shared/ui/forms",
+      "sourceRoot": "libs/shared/ui/forms/src",
       "prefix": "bmw",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "libs/shared/tsconfig.lib.json",
-              "libs/shared/tsconfig.spec.json"
+              "libs/shared/ui/forms/tsconfig.lib.json",
+              "libs/shared/ui/forms/tsconfig.spec.json"
             ],
             "exclude": ["**/node_modules/**"]
           }
@@ -135,40 +135,9 @@
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
-            "jestConfig": "libs/shared/jest.config.js",
-            "tsConfig": "libs/shared/tsconfig.spec.json",
-            "setupFile": "libs/shared/src/test-setup.ts"
-          }
-        }
-      },
-      "schematics": {
-        "@nrwl/angular:component": {
-          "styleext": "scss"
-        }
-      }
-    },
-    "shared-ui": {
-      "projectType": "library",
-      "root": "libs/shared/ui",
-      "sourceRoot": "libs/shared/ui/src",
-      "prefix": "bmw",
-      "architect": {
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "libs/shared/ui/tsconfig.lib.json",
-              "libs/shared/ui/tsconfig.spec.json"
-            ],
-            "exclude": ["**/node_modules/**"]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "options": {
-            "jestConfig": "libs/shared/ui/jest.config.js",
-            "tsConfig": "libs/shared/ui/tsconfig.spec.json",
-            "setupFile": "libs/shared/ui/src/test-setup.ts"
+            "jestConfig": "libs/shared/ui/forms/jest.config.js",
+            "tsConfig": "libs/shared/ui/forms/tsconfig.spec.json",
+            "setupFile": "libs/shared/ui/forms/src/test-setup.ts"
           }
         }
       },

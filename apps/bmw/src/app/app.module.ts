@@ -1,4 +1,4 @@
-import { UiModule } from './../../../../libs/shared/ui/src/lib/ui.module';
+import { UiModule } from './../../../../libs/shared/ui/forms/src/lib/ui.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgPerfume, PerfumeModule } from 'perfume.js/angular';

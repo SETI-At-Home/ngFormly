@@ -16,8 +16,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@bmw/shared": ["libs/shared/src/index.ts"],
-      "@bmw/shared/ui": ["libs/shared/ui/src/index.ts"]
+      "@bmw/ui": ["libs/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
