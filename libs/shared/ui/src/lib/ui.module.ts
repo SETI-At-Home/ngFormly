@@ -4,8 +4,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormlyModule } from '@ngx-formly/core';
-import { FormlyBootstrapModule } from '@ngx-formly/bootstrap';
+import { FormlyMaterialModule } from '@ngx-formly/material';
 import { TextMaskModule } from 'angular2-text-mask';
+import { MatButtonModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 /** wrappers */
 import { PanelWrapperComponent } from './wrappers/panel-wrapper.component';
@@ -30,14 +32,18 @@ import { config } from './config'
     FormsModule,
     ReactiveFormsModule,
     FormlyModule.forRoot(config),
-    FormlyBootstrapModule,
-    TextMaskModule
+    TextMaskModule,
+    FormlyMaterialModule,
+    MatButtonModule,
+    BrowserAnimationsModule
   ],
   exports: [
     FormsModule,
     ReactiveFormsModule,
     FormlyModule,
-    FormlyBootstrapModule,
+    FormlyMaterialModule,
+    MatButtonModule,
+    BrowserAnimationsModule
   ],
   providers: [UiService]
 })
